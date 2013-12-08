@@ -1,0 +1,20 @@
+Default: &defaults
+  database: glacier-du-bouchet.sqlite3
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: glacier-du-bouchet_test.sqlite3
+  <<: *defaults
+
+Staging:
+  database: glacier-du-bouchet_staging.sqlite3
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: glacier-du-bouchet_production.sqlite3
+  poolsize: 100
+  <<: *defaults
