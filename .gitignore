@@ -9,4 +9,4 @@ cabal-dev/
 yesod-devel/
 .ghci
 .cabal-sandbox
-cabal.sanbox.config
+cabal.sandbox.config
