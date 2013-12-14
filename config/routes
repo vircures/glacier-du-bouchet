@@ -5,3 +5,5 @@
 /robots.txt RobotsR GET
 
 / HomeR GET POST
+/fib/#Int FibR GET
+/dropbox DropboxR GET POST

@@ -20,6 +20,8 @@ library
                      Settings.StaticFiles
                      Settings.Development
                      Handler.Home
+                     Handler.Fib
+                     Handler.Dropbox
 
     if flag(dev) || flag(library-only)
         cpp-options:   -DDEVELOPMENT
@@ -69,6 +71,7 @@ library
                  , conduit                       >= 1.0
                  , monad-logger                  == 0.3.2.0
                  , fast-logger                   >= 0.3        && < 2.0
+                 , authenticate-oauth            == 1.4.0.8
 
 executable         glacier-du-bouchet
     if flag(library-only)
