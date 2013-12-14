@@ -22,6 +22,10 @@ postDropboxR = error "Not yet implemented: postDropboxR"
 server = "dropbox"
 apiURI = "api.dropbox.com/1/oauth"
 
+{-
+Based on sample from
+https://github.com/pasberth/ftap/blob/0d39e09194bdb8b32015250c54fd04b3741ed1e2/Ftap/Transfer.hs
+ -}
 mkConsumer :: B.ByteString -> B.ByteString -> OAuth
 mkConsumer consumerKey consumerSecret = newOAuth
     { oauthServerName = server
